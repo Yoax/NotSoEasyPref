@@ -1,4 +1,4 @@
-# NotSoEasyPref BETA
+# NotSoEasyPref V0.5
 
 ## Objectifs :
 
@@ -10,14 +10,18 @@
 
 ## Roadmap
 
-- **BETA** ~ script ne fonctionnant que sur une seule démarche, _proof of concept_
-- **V0.5** ~ implémentation pour que le script s'effectue sur toutes les démarches
-- **V1** ~ implémentation des données dans un espace web
-- **V2** ~ implémentation d'un système de notification
+- [x] **BETA** ~ script ne fonctionnant que sur une seule démarche, _proof of concept_~~
+- [ ] **V0.5** ~ implémentation pour que le script s'effectue sur toutes les démarches
+- [ ] **V1** ~ implémentation des données dans un espace web
+- [ ] **V2** ~ implémentation d'un système de notification
 
 ## Les démarches supportées
 
-Actuellement, le script fonctionne uniquement sur le renouvellement d'un titre de séjour.
+Actuellement, le script fonctionne sur les démarches suivantes :
+-
+-
+-
+-
 
 ## Installation
 
