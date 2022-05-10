@@ -1,4 +1,4 @@
-# NotSoEasyPref
+# NotSoEasyPref BETA
 
 ## Objectifs :
 
