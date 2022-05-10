@@ -10,7 +10,7 @@
 
 ## Roadmap
 
-- [x] **BETA** ~ script ne fonctionnant que sur une seule démarche, _proof of concept_~~
+- [x] **BETA** ~ script ne fonctionnant que sur une seule démarche, _proof of concept_
 - [ ] **V0.5** ~ implémentation pour que le script s'effectue sur toutes les démarches
 - [ ] **V1** ~ implémentation des données dans un espace web
 - [ ] **V2** ~ implémentation d'un système de notification
