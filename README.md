@@ -18,10 +18,6 @@
 ## Les démarches supportées
 
 Actuellement, le script fonctionne sur les démarches suivantes :
--
--
--
--
 
 ## Installation
 
