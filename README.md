@@ -11,17 +11,23 @@
 ## Roadmap
 
 - [x] **BETA** ~ script ne fonctionnant que sur une seule démarche, _proof of concept_
-- [ ] **V0.5** ~ implémentation pour que le script s'effectue sur toutes les démarches
+- [x] **V0.5** ~ implémentation pour que le script s'effectue sur toutes les démarches
 - [ ] **V1** ~ implémentation des données dans un espace web
 - [ ] **V2** ~ implémentation d'un système de notification
 
 ## Les démarches supportées
 
-Actuellement, le script fonctionne sur les démarches suivantes :
+Actuellement, le script vérifie les disponibilités de la Préfecture de la Seine-Maritime pour les motifs suivants :
+- [Dépôt de la demande d'un premier titre de séjour](https://www.seine-maritime.gouv.fr/booking/create/50382/0)
+- [Dépôt de la demande de renouvelement d'un titre de séjour](https://www.seine-maritime.gouv.fr/booking/create/50389/0)
+- [Retrait d'un titre de séjour](https://www.seine-maritime.gouv.fr/booking/create/50420/0)
+- [Retrait d'un récépissé](https://www.seine-maritime.gouv.fr/booking/create/50416/0)
+- [Retrait d'un document de voyage (Document de Circulation pour Etrangers Mineurs, Titre de Voyage pour Réfugié ou Titre de Voyage)](https://www.seine-maritime.gouv.fr/booking/create/51406/0)
+- [Régularisation du séjour](https://www.seine-maritime.gouv.fr/booking/create/47116/0)
 
 ## Installation
 
-Tutoriel à venir.
+Tutoriel prévu lors de la V1.
 
 # Crédits
 
