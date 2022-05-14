@@ -27,7 +27,10 @@ Actuellement, le script vérifie les disponibilités de la Préfecture de la Sei
 
 ## Installation
 
-Tutoriel prévu lors de la V1.
+Étape par étape à venir.
+1. Installer un [interpréteur Python](https://www.python.org/downloads/) et le navigateur [Mozilla Firefox](https://www.mozilla.org/fr/firefox/new/)
+2. Installer le paquet [Selenium](https://selenium-python.readthedocs.io/installation.html) selon votre système d'exploitation
+
 
 # Crédits
 
