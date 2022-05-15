@@ -15,6 +15,7 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
+from selenium.webdriver.firefox.options import Options
 import time
 from datetime import datetime, date
 
@@ -28,20 +29,22 @@ dictionnaireDemarches = {
     "regularisation_sejour": "https://www.seine-maritime.gouv.fr/booking/create/47116/0",
 }
 tempsAttente = 20 ###en secondes
+jour = date.today().strftime("%m_%d_%y") ###format MM/JJ/AA - ce format aide à s'organiser dans des fichiers car il permet de trier alphabétiquement et chronologiquement en un clic
+heure = datetime.now().strftime("%H_%M_%S") ###format HH:MM:SS
 
-jour = date.today().strftime("%m/%d/%y") ###format MM/JJ/AA - ce format aide à s'organiser dans des fichiers car il permet de trier alphabétiquement et chronologiquement en un clic
-
-# Lancement du WebDriver
-driver = webdriver.Firefox()
+# Lancement du WebDriver sans tête et ouverture du CSV
+options = Options()
+options.headless = True
+driver = webdriver.Firefox(options=options)
+fichier = open("rapport" + ".csv", "a")
 
 # Script
 print(
-    "\n~~~~~~~~\n"
     "n0750345ypr3f : un script pour (sur)veiller l'accès aux droits des étrangers"
-    "\n~~~~~~~~\n"
-    "Patientez 5 minutes ! Ne fermez pas Firefox, le petit robot travaille dur !\n"
-    "Quand la fenêtre de Firefox se fermera, ce sera terminé !"
-    "\n~~~~~~~~\n"
+    "\nExécution le " + str(jour) + " à " + str(heure) +
+    "\n~~~~~~~~"
+    "\nPatientez 10 minutes ! Ne fermez pas le terminal, le petit robot travaille dur !"
+    "\n~~~~~~~~"
 )
 
 for i in dictionnaireDemarches:
@@ -49,7 +52,8 @@ for i in dictionnaireDemarches:
     nomDemarche = str(i)
     urlDemarche = str(dictionnaireDemarches.get(i))
     driver.get(urlDemarche)
-    heure = datetime.now().strftime("%H:%M:%S") ###format HH:MM:SS
+    heure = datetime.now().strftime("%H_%M_%S") ###format HH_MM_SS
+    print("\n" + nomDemarche + " : " + str(heure))
 
     ## Coche le bouton d'acceptation
     elem = driver.find_element(By.NAME, "condition")
@@ -64,18 +68,25 @@ for i in dictionnaireDemarches:
     elem = driver.find_element(By.ID, "FormBookingCreate").text
     if elem == "Il n'existe plus de plage horaire libre pour votre demande de rendez-vous. Veuillez recommencer ultérieurement.":
         disponibilite = 0
-        print(nomDemarche, " : il n'y a plus de disponibilité")
+        print("il n'y a plus de disponibilité")
+
     else:
         disponibilite = 1
-        print(nomDemarche, " : DES CRENEAUX SONT DISPOS !!!")
+        print("DES CRENEAUX SONT DISPOS !!!")
         
-    fichier = open("rapport" + ".csv", "a")
-    fichier.write(str(jour) + "," + str(heure) + "," + nomDemarche + "," + str(disponibilite) + "\n")
+        ## Enregistre le code source de la page
+        fichierHTML = open("HTML/" + nomDemarche + "-" + str(jour) + "-" + str(heure) + ".html", "x")
+        codeHTML = driver.page_source
+        fichierHTML.write(codeHTML)
+        fichierHTML.close()
+
+    fichier.write("\n" + str(jour) + "," + str(heure) + "," + nomDemarche + "," + str(disponibilite))
 
 # Et c'est terminé !
 driver.close()
+fichier.close()
 print(
-    "\n~~~~~~~~\n"
-    "TERMINÉ AVEC BRIO !（＾ω＾)"
-    "\n~~~~~~~~\n"
+    "~~~~~~~~"
+    "\nTERMINÉ AVEC BRIO !（＾ω＾)"
+    "\n~~~~~~~~"
 )
