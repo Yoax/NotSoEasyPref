@@ -28,9 +28,8 @@ Actuellement, le script vérifie les disponibilités de la Préfecture de la Sei
 ## Installation
 
 Étape par étape à venir.
-1. Installer un [interpréteur Python](https://www.python.org/downloads/) et le navigateur [Mozilla Firefox](https://www.mozilla.org/fr/firefox/new/)
-2. Installer le paquet [Selenium](https://selenium-python.readthedocs.io/installation.html) selon votre système d'exploitation
-
+1. Installer un [interpréteur Python](https://www.python.org/downloads/) et le navigateur de votre choix. Ici, j'utilise [Mozilla Firefox](https://www.mozilla.org/fr/firefox/new/)
+2. Installer le paquet [Selenium](https://selenium-python.readthedocs.io/installation.html) selon votre système d'exploitation. Récupérez également le WebDriver correspondant à votre navigateur Internet (aucun n'est inclus dans mon dépôt)
 
 # Crédits
 
