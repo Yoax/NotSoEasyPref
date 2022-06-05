@@ -2,7 +2,7 @@
 
 ## Objectifs :
 
-- Agréger les créneaux de rendez-vous que proposent la préfecture de Seine-Maritime aux étrangers dans une base de données
+- Agréger les créneaux de rendez-vous que proposent la préfecture de Seine-Maritime aux étrangers toutes les X heures
 - Présenter dans une page web les créneaux dispos pour faciliter le travail des professionnels
 - Notifier une mise à disponibilité de la démarche souhaitée
 
