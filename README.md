@@ -1,5 +1,10 @@
 # NotSoEasyPref
 https://aministration.fr
+
+Ce projet n'est en aucun cas une volonté de nuire à la Préfecture de Seine-Maritime et ce qu'elle représente. Je souhaite faliciter l'accès aux droits des usagers étrangers pour modérer les frustrations (tant des usagers que des professionnels) engendrées par le système actuel. Ainsi, il est, selon moi, nécessaire de mettre en place cette suite d'outil.
+
+Je suis joignable par [mail](mailto:aministrateur@aministration.fr).
+
 ## Objectifs :
 
 - Agréger les créneaux de rendez-vous que proposent la préfecture de Seine-Maritime aux étrangers à une fréquence fixe
@@ -25,6 +30,7 @@ Actuellement, le script vérifie les disponibilités de la Préfecture de la Sei
 - [Retrait d'un document de voyage (Document de Circulation pour Etrangers Mineurs, Titre de Voyage pour Réfugié ou Titre de Voyage)](https://www.seine-maritime.gouv.fr/booking/create/51406/0)
 - [Régularisation du séjour](https://www.seine-maritime.gouv.fr/booking/create/47116/0)
 
+Toutes les 15 minutes, NotSoEasyPref est exécuté par une tâche CRON. Le reste suit.
 # Crédits
 ## Bibliothèques
 
