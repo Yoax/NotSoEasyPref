@@ -1,7 +1,7 @@
 # NotSoEasyPref
 https://aministration.fr
 
-Ce projet n'est en aucun cas une volonté de nuire à la Préfecture de Seine-Maritime et ce qu'elle représente. Je souhaite faliciter l'accès aux droits des usagers étrangers pour modérer les frustrations (tant des usagers que des professionnels) engendrées par le système actuel. Ainsi, il est, selon moi, nécessaire de mettre en place cette suite d'outil.
+Ce projet n'est en aucun cas une volonté de nuire à la Préfecture de Seine-Maritime et ce qu'elle représente. Je souhaite faliciter l'accès aux droits des usagers étrangers pour modérer les frustrations (tant des usagers que des professionnels) engendrées par le système actuel. Ainsi, il est, selon moi, nécessaire de mettre en place cette suite d'outil pour permettre la transparance.
 
 Je suis joignable par [mail](mailto:aministrateur@aministration.fr).
 
